@@ -1,0 +1,15 @@
+@layer {
+  .simplebar-scrollbar {
+    @apply absolute w-1.5 ltr:right-px rtl:left-px;
+    min-height: 10px;
+  }
+  .simplebar-scrollbar::before {
+    @apply absolute !right-0 !left-0 rounded-md !bg-slate-500 opacity-0;
+    content: ' ';
+    transition: opacity 0.2s linear;
+  }
+  .simplebar-scrollbar.simplebar-visible::before {
+    @apply opacity-50;
+    transition: opacity 0s linear;
+  }
+}

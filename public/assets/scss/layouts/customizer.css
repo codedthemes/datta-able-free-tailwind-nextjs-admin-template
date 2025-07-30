@@ -1,0 +1,48 @@
+@layer {
+  .preset-btn.btn {
+    @apply border-theme-border dark:border-themedark-border flex h-[54px] w-[54px] items-center justify-center border-2 p-[3px];
+  }
+
+  .preset-btn.btn.active {
+    @apply border-primary-500;
+  }
+
+  .preset-btn.btn.btn-img {
+    @apply h-auto rounded;
+  }
+
+  .preset-btn.btn.btn-img img {
+    @apply w-full;
+  }
+  .theme-color {
+    @apply relative flex gap-1;
+  }
+
+  .theme-color > a {
+    @apply relative inline-flex h-[30px] w-[30px] items-center justify-center overflow-hidden rounded transition-all;
+  }
+
+  .theme-color > a::after {
+    @apply absolute inset-[4px] z-10 scale-0 rounded bg-white/30 transition-all content-[""];
+  }
+
+  .theme-color > a i {
+    @apply text-[18px] text-white opacity-0 transition-all;
+  }
+
+  .theme-color > a:hover i {
+    @apply opacity-100;
+  }
+
+  .theme-color > a.active::after {
+    @apply scale-100;
+  }
+
+  .theme-color > a.active i {
+    @apply opacity-100;
+  }
+
+  .theme-color.navbar-img > a {
+    @apply h-[100px] w-[45px] bg-cover;
+  }
+}

@@ -1,0 +1,338 @@
+@layer {
+  /* Form Control */
+  .form-control,
+  .datatable-input {
+    @apply disabled:bg-secondary-200/10 focus:shadow-primary-500/10 dark:focus:shadow-primary-500/10 focus:border-primary-500 dark:focus:border-primary-500 border-theme-inputborder dark:border-themedark-inputborder bg-theme-inputbg dark:bg-themedark-inputbg block w-full rounded border px-4 py-2.5 text-base placeholder:text-[#bec8d0] focus:shadow-[0_0_0_1px_#ccc] focus:outline-none disabled:pointer-events-none;
+  }
+
+  /* File Input */
+  .form-control[type='file']::file-selector-button {
+    @apply bg-secondary-300/10 border-r-theme-inputborder dark:border-r-themedark-inputborder -mx-4 -my-2.5 me-3 cursor-pointer border-0 border-r px-4 py-2.5 shadow-none outline-none;
+  }
+
+  /* Error Style */
+  .form-control.error {
+    @apply border-danger-500;
+  }
+
+  /* Form Control Plaintext */
+  .form-control-plaintext {
+    @apply block w-full rounded bg-transparent px-4 py-2.5 text-base placeholder:text-[#bec8d0] focus:outline-none disabled:pointer-events-none dark:bg-transparent;
+  }
+
+  /* Form Control Large */
+  .form-control-lg {
+    @apply rounded-lg px-[.85rem] py-[.775rem] text-[1.09375rem];
+  }
+
+  /* Form Control Small */
+  .form-control-sm {
+    @apply rounded-sm px-[.7rem] py-[.375rem] text-[.765625rem];
+  }
+
+  /* Form Select */
+  .form-select,
+  .datatable-selector {
+    /*  */
+    @apply focus:shadow-primary-500 focus:border-primary-500 border-theme-inputborder dark:border-themedark-inputborder bg-theme-inputbg dark:bg-themedark-inputbg block w-full appearance-none rounded border [background-image:var(--select-bg)] bg-[length:16px_12px] bg-no-repeat py-2.5 text-base focus:shadow-[0_0_0_1px_#ccc] focus:outline-none ltr:bg-[right_1rem_center] ltr:pr-8 ltr:pl-4 rtl:bg-[left_1rem_center] rtl:pr-4 rtl:pl-8 dark:[background-image:var(--select-bg-dark)];
+  }
+
+  /* Select Error */
+  .form-select.error {
+    @apply border-danger-500;
+  }
+
+  /* Select Multiple/Size */
+  .form-select[multiple],
+  .form-select[size]:not([size='1']),
+  [multiple].datatable-selector,
+  [size].datatable-selector:not([size='1']) {
+    @apply bg-none pr-3;
+  }
+
+  /* Select Large */
+  .form-select-lg {
+    @apply rounded-lg py-[.775rem] text-[1.09375rem] ltr:pr-8 ltr:pl-[.85rem] rtl:pr-[.85rem] rtl:pl-8;
+  }
+
+  /* Select Small */
+  .form-select-sm {
+    @apply rounded-sm py-[.375rem] text-[.765625rem] ltr:pr-8 ltr:pl-[.7rem] rtl:pr-[.7rem] rtl:pl-8;
+  }
+
+  /* Form Control Color */
+  .form-control-color {
+    @apply h-[calc(1.5em_+_1.6rem_+_2px)] w-12 p-[.8rem];
+  }
+
+  .form-control-color::-moz-color-swatch,
+  .form-control-color::-webkit-color-swatch {
+    @apply !rounded !border-0;
+  }
+
+  /* Input Group Text */
+  .input-group-text {
+    @apply border-theme-inputborder dark:border-themedark-inputborder flex items-center border p-[0.625rem_1rem] text-base;
+  }
+
+  /* Input Group */
+  .input-group {
+    @apply relative flex w-full flex-wrap items-stretch *:rounded-none *:ltr:-ml-px *:ltr:first:ml-0 *:ltr:first:rounded-l *:ltr:last:rounded-r *:rtl:-mr-px *:rtl:first:mr-0 *:rtl:first:rounded-r *:rtl:last:rounded-l;
+  }
+
+  .input-group .form-control,
+  .input-group .form-select {
+    @apply relative w-[1%] min-w-0 flex-auto;
+  }
+
+  /* Datepicker Cell */
+  .datepicker-controls .btn:focus,
+  .datepicker-controls .btn:hover,
+  .datepicker-controls .btn,
+  .datepicker-picker {
+    @apply !text-theme-bodycolor dark:!text-themedark-bodycolor !bg-theme-cardbg dark:!bg-themedark-cardbg;
+  }
+  .datepicker-cell:not(.disabled):hover,
+  .datepicker-cell.focused:not(.selected),
+  .datepicker-cell.selected {
+    @apply !bg-primary-500 hover:!bg-primary-500;
+  }
+
+  .datepicker-cell.today.focused:not(.selected) {
+    @apply !bg-success-500 hover:!bg-success-500;
+  }
+  .datepicker-cell.disabled {
+    @apply !text-theme-bodycolor dark:!text-themedark-bodycolor;
+  }
+  .datepicker-cell.next:not(.disabled),
+  .datepicker-cell.prev:not(.disabled) {
+    @apply hover:!bg-primary-500 hover:!text-white;
+  }
+  .datepicker-view .week {
+    @apply !text-primary-500;
+  }
+
+  /* Form Label */
+  .form-label {
+    @apply text-theme-headings dark:text-themedark-headings mb-2 inline-block;
+  }
+
+  /* Column Form Label */
+  .col-form-label {
+    @apply py-[calc(.8rem_+_1px)];
+  }
+
+  .col-form-label-sm {
+    @apply py-[calc(.375rem_+_1px)];
+  }
+
+  .col-form-label-lg {
+    @apply py-[calc(.775rem_+_1px)];
+  }
+
+  /* Form Check Input */
+  .form-check {
+    @apply inline-flex gap-1.5;
+  }
+
+  .form-check-label {
+    @apply leading-[1.2];
+  }
+
+  .form-check-input {
+    @apply border-theme-inputborder dark:border-themedark-inputborder checked:!bg-primary-500 checked:border-primary-500 h-[1.25em] w-[1.25em] appearance-none border bg-contain bg-center bg-no-repeat align-text-bottom transition-all disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .form-check-input[disabled],
+  .form-check-input:disabled ~ .form-check-label {
+    @apply cursor-default opacity-50;
+  }
+
+  .form-check-input.error {
+    @apply border-danger-500;
+  }
+
+  /* Checkbox and Radio Types */
+  .form-check-input[type='checkbox'] {
+    @apply rounded checked:[background-image:var(--checkbox-bg)];
+  }
+
+  .form-check-input[type='radio'] {
+    @apply rounded-full checked:[background-image:var(--radio-bg)];
+  }
+
+  /* Form Check Switch */
+  .form-check.form-switch {
+    @apply mb-1 flex items-center gap-2;
+  }
+
+  .form-check.form-switch .form-check-input {
+    @apply w-[2em] rounded-full [background-image:var(--switch-bg)] bg-left checked:[background-image:var(--switch-active-bg)] checked:bg-right;
+  }
+
+  /* Form Range */
+  .form-range {
+    @apply bg-theme-bodybg dark:bg-themedark-bodybg h-2 w-full appearance-none rounded-md;
+  }
+
+  .form-range::-webkit-slider-thumb {
+    @apply !bg-primary-500 h-4 w-4 cursor-pointer appearance-none rounded-full;
+  }
+
+  .form-range:focus::-webkit-slider-thumb {
+    @apply opacity-90;
+  }
+
+  /* NoUiSlider */
+  .pc-toggle-noUiSlider {
+    @apply h-[50px];
+  }
+
+  .pc-toggle-noUiSlider.off .noUi-handle {
+    @apply bg-danger-500 border-danger-500 shadow-none;
+  }
+
+  .noUi-target {
+    @apply !bg-theme-bodybg dark:!bg-themedark-bodybg dark:!border-0 dark:!shadow-none;
+  }
+
+  .noUi-handle {
+    @apply !bg-theme-bodybg dark:!bg-themedark-bodybg shadow-none;
+  }
+
+  /* CodeMirror and Editor Toolbar */
+  .CodeMirror,
+  .editor-toolbar {
+    @apply text-theme-bodycolor dark:text-themedark-bodycolor !bg-theme-cardbg dark:!bg-themedark-cardbg !border-theme-border dark:!border-themedark-border;
+  }
+
+  .CodeMirror a {
+    @apply !text-theme-bodycolor dark:!text-themedark-bodycolor border-0;
+  }
+
+  .CodeMirror a.active,
+  .CodeMirror a:hover {
+    @apply !text-theme-bodycolor dark:!text-themedark-bodycolor bg-[rgba(0,0,0,0.1)] dark:bg-[rgba(0,0,0,0.2)];
+  }
+
+  .CodeMirror i.separator {
+    @apply border-l-theme-border dark:border-l-themedark-border border-r-transparent;
+  }
+
+  .noUi-connect {
+    @apply !bg-primary-500;
+  }
+
+  /* Switch Handle */
+  .switch-handle {
+    @apply !bg-theme-cardbg dark:!bg-themedark-cardbg;
+  }
+
+  /* Typeahead */
+  .typeahead {
+    @apply relative;
+  }
+
+  .typeahead > ul {
+    @apply !border-theme-border dark:!border-themedark-border !bg-theme-cardbg dark:!bg-themedark-cardbg absolute top-full left-0 float-left m-[2px_0_0] min-w-[170px] rounded border p-[5px_-] shadow-[0,6px,12px,rgba(0,0,0,.17)];
+  }
+
+  .typeahead > ul > li > a {
+    @apply block p-[3px_20px] leading-normal whitespace-nowrap;
+  }
+
+  .typeahead > ul > li.active > a,
+  .typeahead > ul > li.active > a:hover,
+  .typeahead > ul > li > a:hover {
+    @apply !bg-primary-500 text-white no-underline;
+  }
+
+  /* Inline CKEditor */
+  #cke5-inline-demo .ck-content {
+    @apply !bg-theme-cardbg dark:!bg-themedark-cardbg !border-theme-border dark:!border-themedark-border mb-4 border p-4 sm:p-10;
+  }
+
+  #cke5-inline-demo .ck-content .image-inline {
+    @apply float-right ml-[var(--ck-image-style-spacing)] max-w-[50%];
+  }
+
+  #cke5-inline-demo header.ck-content {
+    @apply text-center;
+  }
+
+  #cke5-inline-demo header.ck-content h2 + h3 {
+    @apply font-semibold;
+  }
+
+  .demo-row {
+    @apply flex w-full flex-col sm:flex-row;
+  }
+
+  .demo-row .demo-row__half {
+    @apply w-full px-0 sm:w-2/4 ltr:first:sm:pr-2 ltr:last:sm:pl-2 rtl:first:sm:pl-2 rtl:last:sm:pr-2;
+  }
+
+  /* Dropzone */
+  .dropzone {
+    @apply !border-theme-inputborder dark:!border-themedark-inputborder !bg-theme-inputbg dark:!bg-themedark-inputbg mb-5 min-h-[auto] cursor-pointer rounded border border-2 border-dashed p-5;
+  }
+
+  /* Uppy Dashboard */
+  .uppy-Dashboard {
+    @apply relative !z-[1010];
+  }
+  .uppy-Dashboard--modal {
+    @apply !z-[1030];
+  }
+
+  .uppy-Dashboard-overlay {
+    @apply !z-[1030];
+  }
+
+  .uppy-Dashboard-inner {
+    @apply !z-[1031];
+  }
+
+  /* Error Message */
+  .error-message {
+    @apply text-danger-500;
+  }
+
+  /* Datepicker */
+  .datepicker-picker {
+    @apply !bg-theme-cardbg dark:!bg-themedark-cardbg;
+  }
+
+  .datepicker-controls .btn {
+    @apply bg-transparent;
+  }
+
+  .datepicker-cell.disabled {
+    @apply text-theme-bodycolor/50 dark:text-themedark-bodycolor/50;
+  }
+
+  .datepicker-cell.focused:not(.selected),
+  .datepicker-cell:not(.disabled):hover {
+    @apply !bg-primary-500 text-white;
+  }
+  .datepicker-cell.highlighted:not(.selected):not(.range):not(.today):not(.disabled):hover,
+  .datepicker-cell.highlighted:not(.selected):not(.range):not(.today).focused,
+  .datepicker-cell.highlighted:not(.selected):not(.range):not(.today) {
+    @apply bg-[rgba(0,0,0,0.1)];
+  }
+  .datepicker-footer {
+    @apply bg-transparent;
+  }
+  .ql-container.ql-snow,
+  .ql-toolbar.ql-snow {
+    @apply border-theme-inputborder dark:border-themedark-inputborder;
+  }
+  .ql-snow .ql-picker.ql-expanded .ql-picker-label,
+  .ql-snow .ql-picker {
+    @apply !text-theme-bodycolor dark:!text-themedark-bodycolor;
+  }
+
+  .ql-snow .ql-stroke {
+    @apply !stroke-theme-bodycolor dark:!stroke-themedark-bodycolor;
+  }
+}

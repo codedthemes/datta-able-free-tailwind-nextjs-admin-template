@@ -1,0 +1,12 @@
+/* scroll bar */
+@import 'simplebar-react/dist/simplebar.min.css';
+
+/* MAP */
+@import 'jsvectormap/dist/jsvectormap.css';
+
+/* ICONS */
+@import '../../public/assets/fonts/phosphor/regular/style.css';
+@import '../../public/assets/fonts/tabler-icons.min.css';
+
+/* CSS */
+@import '../../public/assets/scss/style.scss';

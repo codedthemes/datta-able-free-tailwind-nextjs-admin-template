@@ -1,0 +1,46 @@
+@layer {
+  .btn-group,
+  .dropdown {
+    @apply relative;
+  }
+
+  .btn-group .dropdown-toggle,
+  .dropdown .dropdown-toggle {
+    @apply relative after:ml-1 after:align-bottom after:font-['tabler-icons'] after:text-base after:content-['\ea5f'];
+  }
+
+  .btn-group .dropdown-toggle.arrow-none,
+  .dropdown .dropdown-toggle.arrow-none {
+    @apply after:hidden;
+  }
+
+  .btn-group .dropdown-menu,
+  .dropdown .dropdown-menu {
+    @apply text-theme-bodycolor dark:text-themedark-bodycolor bg-theme-cardbg dark:bg-themedark-inputbg absolute top-full left-0 z-[1026] min-w-48 origin-top scale-0 transform rounded p-2 opacity-0 shadow-[0_4px_24px_0_rgba(62,57,107,.18)];
+  }
+
+  .btn-group .dropdown-menu.dropdown-menu-end,
+  .dropdown .dropdown-menu.dropdown-menu-end {
+    @apply right-0 left-auto;
+  }
+
+  .btn-group .dropdown-menu .dropdown-item,
+  .dropdown .dropdown-menu .dropdown-item {
+    @apply hover:bg-secondary-100/20 block flex w-full items-center gap-3 rounded px-2.5 px-[15px] py-2.5;
+  }
+
+  .btn-group .dropdown-menu .dropdown-item i,
+  .dropdown .dropdown-menu .dropdown-item i {
+    @apply text-lg leading-none;
+  }
+
+  .btn-group .dropdown-menu .dropdown-item svg,
+  .dropdown .dropdown-menu .dropdown-item svg {
+    @apply h-[18px] w-[18px];
+  }
+
+  .btn-group.drp-show .dropdown-menu,
+  .dropdown.drp-show .dropdown-menu {
+    @apply block scale-100 transform opacity-100;
+  }
+}
