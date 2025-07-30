@@ -17,7 +17,6 @@ Datta Able Tailwind Next js is a modern and feature-rich admin template designed
 - [Getting Started](#getting-started)
 - [Download](#download)
 - [Why Datta Able?](#why-datta-able)
-- [What's included in Premium Version?](#whats-included-in-premium-version)
 - [Documentation](#documentation)
 - [Browser support](#browser-support)
 - [Technology Stack](#technology-stack)
@@ -66,19 +65,6 @@ Get started with a sweet set of features including:
 - Well-structured code
 - Simple and comprehensive documentation guide
 
-## What's included in Premium Version?
-
-[Pro version](https://codedthemes.com/item/datta-able-tailwind-admin-template/) of Datta Able Tailwind CSS Admin Template contains features like customize with light and dark system, LTR and RTL layouts, full-width or fixed-width design, color presets and many more.
-
-| [Datta Able Free](https://codedthemes.com/item/datta-able-free-tailwind-admin-template/)                    | [Datta able Pro](https://codedthemes.com/item/datta-able-tailwind-admin-template) |
-| ----------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- |
-| **6** Demo pages                                                                                            | **130+** demo pages                                                               |
-| -                                                                                                           | ✓ Multi-language                                                                  |
-| -                                                                                                           | ✓ Dark/Light Mode 🌓                                                              |
-| -                                                                                                           | ✓ 6+ Color Setting Option                                                         |
-| -                                                                                                           | ✓ RTL                                                                             |
-| ✓ [MIT License](https://github.com/codedthemes/datta-able-free-tailwind-admin-template/blob/master/LICENSE) | ✓ [Pro License](https://codedthemes.com/item/datta-able-tailwind-admin-template/) |
-
 ## Documentation
 
 [Datta Able Tailwind Documentation](https://codedthemes.gitbook.io/datta/datta-able-tailwind) helps you with installation, deployment, and troubleshooting.
@@ -89,10 +75,9 @@ Get started with a sweet set of features including:
 
 ## Technology Stack
 
-- Tailwind CSS
-- No Jquery
-- npm/yarn package installer
-- Gulp support
+- Tailwind CSS (v4)
+- NEXT JS (v15)
+- npm package installer
 
 ## Other Technologies
 
