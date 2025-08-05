@@ -12,8 +12,9 @@ const fontOpenSans = Open_Sans({
 });
 
 export const metadata = {
-  title: 'Datta Able - Next.js Tailwind Admin Template',
-  description: 'Download Datta Able Tailwind CSS Template, a premium Tailwind CSS Admin Template developed by CodedThemes.'
+  title: 'Free Tailwind CSS + Next.js Admin Template - CodedThemes',
+  description:
+    'Datta Able, a free Tailwind CSS + NextJS admin template to build your project faster, better and deliver the ultimate user experience.'
 };
 
 export default function RootLayout({ children }) {

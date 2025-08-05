@@ -53,6 +53,15 @@ export default function Landing() {
             </div>
             <div className="flex items-center">
               <a
+                href="https://github.com/codedthemes/datta-able-free-tailwind-nextjs-admin-template"
+                target="_blank"
+                className="btn btn-outline-dark border-secondary-500 rounded-full text-white"
+              >
+                <i className="ti ti-brand-github"></i>
+              </a>
+            </div>
+            <div className="flex items-center">
+              <a
                 href="https://codedthemes.com/item/datta-able-tailwind-admin-template/"
                 target="_blank"
                 className="btn-dark btn ml-3 rounded-full"
@@ -66,11 +75,7 @@ export default function Landing() {
       <div className="relative z-10 container">
         <div className="mx-auto w-full text-center md:w-10/12">
           <h1 className="wow animate__fadeInUp mb-5 text-[22px] leading-[1.2] text-white md:text-[36px] lg:text-[48px]">
-            Explore One of the
-            <span className="animate-[move-bg_24s_infinite_linear] bg-gradient-to-r from-[rgb(37,161,244)] via-[rgb(249,31,169)] to-[rgb(37,161,244)] bg-[length:400%_100%] bg-clip-text bg-left-top font-semibold text-transparent">
-              Featured Dashboard
-            </span>
-            Template in CodedThemes
+            Datta Able Free Tailwind CSS + Next.js Admin Template
           </h1>
           <div className="wow animate__fadeInUp">
             <div className="mx-auto sm:w-8/12">
