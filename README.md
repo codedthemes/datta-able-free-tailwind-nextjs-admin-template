@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://codedthemes.com/item/datta-able-free-tailwind-admin-template/)
-[![GitHub package version](https://img.shields.io/github/package-json/v/codedthemes/datta-able-free-tailwind-admin-template)](https://github.com/codedthemes/datta-able-free-tailwind-nextjs-admin-template)
+[![GitHub package version](https://img.shields.io/github/package-json/v/codedthemes/datta-able-free-tailwind-nextjs-admin-template)](https://github.com/codedthemes/datta-able-free-tailwind-nextjs-admin-template)
 [![Download ZIP](https://img.shields.io/badge/Download-ZIP-blue?style=flat-square&logo=github)](https://codedthemes.com/item/datta-able-free-tailwind-admin-template/)
 [![Join Discord](https://img.shields.io/badge/Join-Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/invite/p2E2WhCb6s)
 
@@ -52,8 +52,8 @@ npm run dev
 ## Download
 
 - Datta Able Free
-  - [Live Preview](https://codedthemes.com/demos/admin-templates/datta-able/tailwind/free)
-  - [Download](https://codedthemes.com/item/datta-able-free-tailwind-admin-template/)
+  - [Live Preview](https://datta-able-free-tailwind-nextjs-adm.vercel.app/)
+  - [Download](https://codedthemes.com/item/datta-able-free-tailwind-nextjs-admin-template/)
 
 ## Why Datta Able?
 
@@ -64,10 +64,6 @@ Get started with a sweet set of features including:
 - Fully responsive and compatible with all modern browsers
 - Well-structured code
 - Simple and comprehensive documentation guide
-
-## Documentation
-
-[Datta Able Tailwind Documentation](https://codedthemes.gitbook.io/datta/datta-able-tailwind) helps you with installation, deployment, and troubleshooting.
 
 ## Browser support
 
