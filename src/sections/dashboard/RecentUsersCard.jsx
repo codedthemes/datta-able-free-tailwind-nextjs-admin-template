@@ -53,7 +53,7 @@ const users = [
   }
 ];
 
-// ==========================|| RECENT USERS CARD ||========================== //
+// ==============================|| RECENT USERS CARD ||============================== //
 
 export default function RecentUsersCard() {
   return (

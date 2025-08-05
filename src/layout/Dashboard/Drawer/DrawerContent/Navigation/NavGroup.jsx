@@ -1,8 +1,11 @@
 'use client';
+
 import PropTypes from 'prop-types';
 
-import { usePathname } from 'next/navigation';
 import { Fragment, useCallback, useEffect, useState } from 'react';
+
+// next
+import { usePathname } from 'next/navigation';
 
 // project imports
 import NavItem from './NavItem';

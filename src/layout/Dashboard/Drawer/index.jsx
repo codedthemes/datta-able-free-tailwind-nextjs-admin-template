@@ -1,10 +1,10 @@
 'use client';
 
-// next
-import Link from 'next/link';
-import Image from 'next/image';
-
 import { useEffect, useRef, useState } from 'react';
+
+// next
+import Image from 'next/image';
+import Link from 'next/link';
 
 // projects imports
 import { handlerDrawerOpen, useGetMenuMaster } from '@/api/menu';
@@ -12,9 +12,10 @@ import DrawerContent from './DrawerContent';
 
 // assets
 const LogoWhite = '/assets/images/logo-white.svg';
-const fevicon = 'assets/images/favicon.svg';
+const fevicon = '/assets/images/favicon.svg';
 
-// ================================= || MAIN DRAWER ||============================== //
+// ==============================|| MAIN DRAWER ||============================== //
+
 export default function MainDrawer() {
   const { menuMaster } = useGetMenuMaster();
   const [isMobile, setIsMobile] = useState(false);

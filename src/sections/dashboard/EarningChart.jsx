@@ -1,3 +1,5 @@
+'use client';
+
 // next
 import dynamic from 'next/dynamic';
 
@@ -6,7 +8,6 @@ const ReactApexChart = dynamic(() => import('react-apexcharts'), { ssr: false })
 // chart-options
 const chartOptions = {
   series: [{ name: 'Market Days ', data: [10, 60, 45, 72, 45, 86], color: '#fff' }],
-
   options: {
     chart: {
       toolbar: {
@@ -26,7 +27,6 @@ const chartOptions = {
       curve: 'straight',
       width: 6
     },
-
     grid: {
       xaxis: {
         lines: {
@@ -39,23 +39,19 @@ const chartOptions = {
         }
       }
     },
-
     tooltip: {
       x: {
         show: false
       },
-
       marker: {
         show: false
       }
     },
-
     yaxis: {
       labels: {
         show: false
       }
     },
-
     xaxis: {
       categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
       axisTicks: {
@@ -73,7 +69,7 @@ const chartOptions = {
   }
 };
 
-// =============================|| DEFAULT - EARNING CHART ||============================== //
+// ==============================|| DEFAULT - EARNING CHART ||============================== //
 
 export default function EarningChart() {
   return (

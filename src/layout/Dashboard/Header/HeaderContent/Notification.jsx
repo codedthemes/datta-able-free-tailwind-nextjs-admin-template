@@ -1,10 +1,11 @@
 'use client';
+
 import PropTypes from 'prop-types';
 
 // next
 import Image from 'next/image';
 
-// project-imports
+// project imports
 import SimpleBarScroll from '@/components/third-party/SimpleBar';
 import { useDetectOutsideClick } from '@/components/useDetectOutsideClick';
 
@@ -68,7 +69,7 @@ const notifications = [
   }
 ];
 
-// ===========================|| HEADER - NOTIFICATION DATA ||============================== //
+// ==============================|| HEADER - NOTIFICATION DATA ||============================== //
 
 function NotificationItem({ avatar, time, title, description, actions }) {
   return (
@@ -90,7 +91,7 @@ function NotificationItem({ avatar, time, title, description, actions }) {
   );
 }
 
-// ===========================|| HEADER - NOTIFICATION ||============================== //
+// ==============================|| HEADER - NOTIFICATION ||============================== //
 
 export default function HeaderNotification() {
   const { ref, isOpen, setIsOpen } = useDetectOutsideClick(false);

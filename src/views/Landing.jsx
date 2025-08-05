@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Logo = '/assets/images/logo-white.svg';
 const DashboardImg = '/assets/images/landing/img-header-main.jpg';
 
-// ================================= || LANDING PAGE ||============================== //
+// ==============================|| LANDING PAGE ||============================== //
 
 export default function Landing() {
   return (
@@ -65,9 +65,7 @@ export default function Landing() {
       </nav>
       <div className="relative z-10 container">
         <div className="mx-auto w-full text-center md:w-10/12">
-          <h1
-            className="wow animate__fadeInUp mb-5 text-[22px] leading-[1.2] text-white md:text-[36px] lg:text-[48px]"
-          >
+          <h1 className="wow animate__fadeInUp mb-5 text-[22px] leading-[1.2] text-white md:text-[36px] lg:text-[48px]">
             Explore One of the
             <span className="animate-[move-bg_24s_infinite_linear] bg-gradient-to-r from-[rgb(37,161,244)] via-[rgb(249,31,169)] to-[rgb(37,161,244)] bg-[length:400%_100%] bg-clip-text bg-left-top font-semibold text-transparent">
               Featured Dashboard
@@ -91,18 +89,24 @@ export default function Landing() {
             </Link>
           </div>
           <div className="mt8 wow animate__fadeInUp sm:mt-10">
-            <img
+            <Image
               src={DashboardImg}
-              alt="images"
-              className="img-fluid img-header rounded-[14px_14px_0_0] border-4 border-white shadow-[0px_-6px_10px_0px_rgba(12,21,70,0.03)]"
+              alt="Dashboard"
+              width={1200}
+              height={700}
+              className="w-full rounded-t-[14px] border-4 border-white shadow-[0px_-6px_10px_0px_rgba(12,21,70,0.03)]"
+              priority
             />
           </div>
         </div>
       </div>
-      <img
-        src="assets/images/landing/img-wave.svg"
-        alt="images"
-        className="img-wave inset-x absolute -bottom-px z-10 drop-shadow-[0px_-6px_10px_rgba(12,21,70,0.05)] dark:brightness-[0.1]"
+      <Image
+        src="/assets/images/landing/img-wave.svg"
+        alt="Wave"
+        width={1440}
+        height={100}
+        className="absolute right-0 bottom-0 left-0 z-10 w-full object-contain drop-shadow-[0px_-6px_10px_rgba(12,21,70,0.05)] dark:brightness-[0.1]"
+        priority
       />
       <div className="absolute inset-0 z-[1] bg-[linear-gradient(0deg,rgba(0,0,0,0.5019607843),transparent)]"></div>
     </header>

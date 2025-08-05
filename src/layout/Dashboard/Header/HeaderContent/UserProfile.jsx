@@ -1,14 +1,16 @@
 'use client';
 
-import SimpleBarScroll from '@/components/third-party/SimpleBar';
-import { useDetectOutsideClick } from '@/components/useDetectOutsideClick';
 // next
 import Image from 'next/image';
+
+// project imports
+import SimpleBarScroll from '@/components/third-party/SimpleBar';
+import { useDetectOutsideClick } from '@/components/useDetectOutsideClick';
 
 // assets
 const Avatar2 = '/assets/images/user/avatar-2.png';
 
-// ===========================|| HEADER CONTENT - USER PROFILE ||============================== //
+// ==============================|| HEADER CONTENT - USER PROFILE ||============================== //
 
 export default function HeaderUserProfile() {
   const { ref, isOpen, setIsOpen } = useDetectOutsideClick(false);

@@ -1,7 +1,7 @@
-import TypographyPage from '@/views/ui-components/Typography';
+import Typography from '@/views/ui-components/Typography';
 
 // ==============================|| TYPOGRAPHY PAGE ||============================== //
 
-export default function TypographyViewPage() {
-  return <TypographyPage />;
+export default function TypographyPage() {
+  return <Typography />;
 }

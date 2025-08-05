@@ -1,8 +1,9 @@
 'use client';
 
+// project imports
 import { useDetectOutsideClick } from '@/components/useDetectOutsideClick';
 
-// ===========================|| HEADER - SEARCH ||============================== //
+// ==============================|| HEADER - SEARCH ||============================== //
 
 export default function HeaderSearch() {
   const { ref, isOpen, setIsOpen } = useDetectOutsideClick(false);

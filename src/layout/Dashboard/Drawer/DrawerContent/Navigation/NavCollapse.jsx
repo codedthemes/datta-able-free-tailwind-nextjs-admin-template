@@ -1,13 +1,14 @@
 'use client';
+
 import PropTypes from 'prop-types';
+
+import { useEffect, useState, useMemo, useCallback } from 'react';
 
 // next
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 
-import { useEffect, useState, useMemo, useCallback } from 'react';
-
-// project-imports
+// project imports
 import NavItem from './NavItem';
 import { useGetMenuMaster } from '@/api/menu';
 

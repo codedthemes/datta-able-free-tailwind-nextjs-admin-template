@@ -4,7 +4,7 @@ import NextLink from 'next/link';
 
 const logo = '/assets/images/logo-dark.svg';
 
-// ================================= || REGISTER PAGE ||============================== //
+// ==============================|| REGISTER PAGE ||============================== //
 
 export default function LoginPage() {
   return (

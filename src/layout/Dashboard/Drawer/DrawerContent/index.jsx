@@ -1,15 +1,16 @@
+'use client';
+
 import PropTypes from 'prop-types';
-// next
-import { usePathname } from 'next/navigation';
 
 import { useCallback, useEffect, useState } from 'react';
 
-// project imports
-import SimpleBarScroll from '@/components/third-party/SimpleBar';
+// next
+import { usePathname } from 'next/navigation';
 
 // project imports
-import Navigation from './Navigation';
+import SimpleBarScroll from '@/components/third-party/SimpleBar';
 import menuItems from '@/menu-items';
+import Navigation from './Navigation';
 
 // ==============================|| DRAWER CONTENT - NAVIGATION ||============================== //
 

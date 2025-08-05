@@ -1,7 +1,8 @@
 'use client';
+
 import PropTypes from 'prop-types';
 
-// third-party
+// third party
 import { BrowserView, MobileView } from 'react-device-detect';
 import SimpleBar from 'simplebar-react';
 

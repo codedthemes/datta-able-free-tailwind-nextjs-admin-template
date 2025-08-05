@@ -1,7 +1,6 @@
-'';
 import { useMemo } from 'react';
 
-// third-party
+// third party
 import useSWR, { mutate } from 'swr';
 
 const initialState = {

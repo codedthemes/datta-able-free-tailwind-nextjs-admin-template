@@ -3,7 +3,7 @@
 // project import
 import { useDetectOutsideClick } from '@/components/useDetectOutsideClick';
 
-// ===========================|| HEADER - SETTING ||============================== //
+// ==============================|| HEADER - SETTING ||============================== //
 
 export default function HeaderSetting() {
   const { ref, isOpen, setIsOpen } = useDetectOutsideClick(false);

@@ -1,11 +1,12 @@
 'use client';
+
 // next
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { useState, useEffect, useCallback } from 'react';
 
-// project-imports
+// project imports
 import navigation from '@/menu-items';
 
 // ==============================|| MAIN BREADCRUMB ||============================== //

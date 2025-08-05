@@ -1,7 +1,7 @@
-import LoginPage from '@/views/pages/Login';
+import Login from '@/views/pages/Login';
 
-// ==============================||LOGIN PAGE ||============================== //
+// ==============================|| LOGIN PAGE ||============================== //
 
-export default function LoginViewPage() {
-  return <LoginPage />;
+export default function LoginPage() {
+  return <Login />;
 }

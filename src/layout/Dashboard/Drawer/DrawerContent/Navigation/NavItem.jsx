@@ -1,10 +1,12 @@
 'use client';
+
 import PropTypes from 'prop-types';
 
-import { usePathname } from 'next/navigation';
+// next
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
-// project-imports
+// project imports
 import { handlerDrawerOpen } from '@/api/menu';
 
 // ==============================|| NAVIGATION - ITEM ||============================== //

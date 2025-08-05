@@ -1,7 +1,10 @@
 'use client';
+
 import PropTypes from 'prop-types';
 
 import { useEffect, useState, useCallback } from 'react';
+
+// ==============================|| USERS MAP ||============================== //
 
 export default function UsersMap({ height }) {
   const [mapHeight, setMapHeight] = useState(height ?? 450);

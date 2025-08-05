@@ -1,8 +1,8 @@
 // project imports
 import dashboard from './dashboard';
-import uiComponents from './ui-components';
-import pages from './pages';
 import other from './other';
+import pages from './pages';
+import uiComponents from './ui-components';
 
 // ==============================|| MENU ITEMS ||============================== //
 

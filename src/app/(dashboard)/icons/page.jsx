@@ -1,7 +1,7 @@
-import IconPage from '@/views/ui-components/Icon';
+import Icon from '@/views/ui-components/Icon';
 
-// ==============================||ICONS PAGE ||============================== //
+// ==============================|| ICONS PAGE ||============================== //
 
-export default function IconViewPage() {
-  return <IconPage />;
+export default function IconPage() {
+  return <Icon />;
 }

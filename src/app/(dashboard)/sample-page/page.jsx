@@ -1,7 +1,7 @@
-import SamplePage from '@/views/SamplePage';
+import SampleViewPage from '@/views/SamplePage';
 
-// ==============================||SAMPLE PAGE ||============================== //
+// ==============================|| SAMPLE PAGE ||============================== //
 
-export default function SampleViewPage() {
-  return <SamplePage />;
+export default function SamplePage() {
+  return <SampleViewPage />;
 }

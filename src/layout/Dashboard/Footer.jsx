@@ -1,7 +1,7 @@
 // next
 import Link from 'next/link';
 
-// =============================|| FOOTER ||============================== //
+// ==============================|| FOOTER ||============================== //
 
 export default function Footer() {
   return (

@@ -1,11 +1,12 @@
 'use client';
+
 import PropTypes from 'prop-types';
 
 // project imports
+import Breadcrumbs from '@/components/Breadcrumbs';
 import MainDrawer from './Drawer';
 import Footer from './Footer';
 import Header from './Header';
-import Breadcrumbs from '@/components/Breadcrumbs';
 
 // ==============================|| DASHBOARD LAYOUT ||============================== //
 

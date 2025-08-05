@@ -1,13 +1,13 @@
 'use client';
 
-// project-imports
+// project imports
 import { handlerDrawerOpen, useGetMenuMaster } from '@/api/menu';
-import HeaderUserProfile from './HeaderContent/UserProfile';
-import HeaderSetting from './HeaderContent/Setting';
 import HeaderNotification from './HeaderContent/Notification';
 import HeaderSearch from './HeaderContent/Search';
+import HeaderSetting from './HeaderContent/Setting';
+import HeaderUserProfile from './HeaderContent/UserProfile';
 
-// assets
+// ==============================|| HEADER ||============================== //
 
 export default function Header() {
   const { menuMaster } = useGetMenuMaster();

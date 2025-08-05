@@ -1,9 +1,10 @@
 'use client';
+
 import PropTypes from 'prop-types';
 
 import { useState } from 'react';
 
-// project-imports
+// project imports
 import NavItem from './NavItem';
 import NavGroup from './NavGroup';
 import menuItems from '@/menu-items';

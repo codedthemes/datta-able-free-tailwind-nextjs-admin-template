@@ -3,9 +3,9 @@ import Image from 'next/image';
 import NextLink from 'next/link';
 
 // assets
-const logo = 'assets/images/logo-dark.svg';
+const logo = '/assets/images/logo-dark.svg';
 
-// ================================= || LOGIN PAGE ||============================== //
+// ==============================|| LOGIN PAGE ||============================== //
 
 export default function LoginPage() {
   return (
@@ -42,8 +42,7 @@ export default function LoginPage() {
                   </div>
                   <h6 className="text-primary-500 mb-0 font-normal">
                     <NextLink href="#" className="text-primary-500">
-                      {' '}
-                      Forgot Password?{' '}
+                      Forgot Password?
                     </NextLink>
                   </h6>
                 </div>

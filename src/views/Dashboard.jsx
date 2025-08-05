@@ -1,12 +1,13 @@
 'use client';
 
+// project imports
 import EarningChart from '@/sections/dashboard/EarningChart';
-import SalesCard from '@/sections/dashboard/SalesCard';
-import StatIndicatorCard from '@/sections/dashboard/StatIndicatorCard';
-import UsersMap from '@/sections/dashboard/UsersMap';
-import SocialStatsCard from '@/sections/dashboard/SocialStatsCard';
 import RatingCard from '@/sections/dashboard/RatingCard';
 import RecentUsersCard from '@/sections/dashboard/RecentUsersCard';
+import SalesCard from '@/sections/dashboard/SalesCard';
+import StatIndicatorCard from '@/sections/dashboard/StatIndicatorCard';
+import SocialStatsCard from '@/sections/dashboard/SocialStatsCard';
+import UsersMap from '@/sections/dashboard/UsersMap';
 
 // ===============================|| STAT INDICATOR CARD - DATA ||============================== //
 
@@ -122,6 +123,7 @@ const socialStatsData = [
 ];
 
 // ==============================|| DASHBOARD PAGE ||============================== //
+
 export default function DashboardPage() {
   return (
     <>

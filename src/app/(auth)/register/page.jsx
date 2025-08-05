@@ -1,7 +1,7 @@
-import RegisterPage from '@/views/pages/Register';
+import Register from '@/views/pages/Register';
 
-// ==============================||REGISTER PAGE ||============================== //
+// ==============================|| REGISTER PAGE ||============================== //
 
-export default function RegisterViewPage() {
-  return <RegisterPage />;
+export default function RegisterPage() {
+  return <Register />;
 }
