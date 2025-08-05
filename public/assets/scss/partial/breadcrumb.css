@@ -1,0 +1,17 @@
+@layer {
+  .breadcrumb {
+    @apply mb-4 flex shrink-0 items-center gap-2;
+  }
+
+  .breadcrumb .breadcrumb-item {
+    @apply last:opacity-75;
+  }
+
+  .breadcrumb .breadcrumb-item:not(:last-child) {
+    @apply relative before:absolute before:font-['tabler-icons'] ltr:mr-[1.35rem] ltr:before:right-[-20px] ltr:before:content-['\ea61'] rtl:ml-[1.35rem] rtl:before:left-[-20px] rtl:before:content-['\ea60'];
+  }
+
+  .breadcrumb .breadcrumb-item:not(:last-child) a {
+    @apply hover:text-primary-500 duration-200 ease-in-out;
+  }
+}

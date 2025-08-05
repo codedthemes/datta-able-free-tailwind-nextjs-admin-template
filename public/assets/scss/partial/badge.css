@@ -1,0 +1,5 @@
+@layer {
+  .badge {
+    @apply inline-block rounded-md px-[0.8em] py-[0.45em] text-[.75em] leading-none font-medium;
+  }
+}
